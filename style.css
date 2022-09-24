@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+  background-color: hsl(0deg, 0%, 98%);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scrollbar-color: #d5ac68 #f1db9d;
+  scrollbar-width: thin;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.container {
+  padding: 30px 20px;
+  background: url(./images/bg-tablet-pattern.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 100px -100px;
+}
+.container .hero nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.container .hero nav .close {
+  display: none;
+  cursor: pointer;
+}
+.container .hero nav .burger {
+  cursor: pointer;
+  height: 100%;
+}
+.container .hero nav .logo {
+  height: 100%;
+}
+.container .hero nav .start {
+  display: none;
+}
+.container .hero nav ul {
+  position: absolute;
+  background-color: white;
+  top: 200%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-weight: 700;
+  color: hsl(228deg, 39%, 23%);
+  padding-block: 50px;
+  border-radius: 5px;
+  box-shadow: 0 200px 500px 5px rgba(110, 108, 108, 0.448);
+}
+.container .hero .data {
+  margin-top: 50px;
+}
+.container .hero .data img {
+  width: 100%;
+}
+.container .hero .data .bottom {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.container .hero .data .bottom h1 {
+  color: hsl(228deg, 39%, 23%);
+}
+.container .hero .data .bottom p {
+  line-height: 30px;
+  color: hsl(227deg, 12%, 61%);
+}
+.container .hero .data .bottom .start {
+  background-color: hsl(12deg, 88%, 59%);
+  border: none;
+  outline: none;
+  padding: 10px;
+  color: hsl(13deg, 100%, 96%);
+  font-weight: semi-bold;
+  width: 150px;
+  border-radius: 100px;
+  box-shadow: 0 5px 10px 0.1px hsl(12deg, 88%, 59%);
+  display: block;
+  cursor: pointer;
+}
+.container .about {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.container .about .aboutText {
+  margin-top: 100px;
+  font-size: 1rem;
+}
+.container .about .aboutText h1 {
+  padding-inline: 50px;
+}
+.container .about .aboutText p {
+  margin-top: 20px;
+  color: hsl(227deg, 12%, 61%);
+  line-height: 30px;
+  padding-inline: 30px;
+}
+.container .about .features {
+  margin-top: 50px;
+}
+.container .about .features .feature {
+  padding-bottom: 50px;
+}
+.container .about .features .feature h3 {
+  background-color: hsl(13deg, 100%, 96%);
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 100px;
+  color: hsl(228deg, 39%, 23%);
+  padding: 5px 20px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+.container .about .features .feature h3 span {
+  background-color: hsl(12deg, 88%, 59%);
+  color: white;
+  padding: 5px 20px;
+  border-radius: 100px;
+  text-align: left;
+}
+.container .about .features .feature p {
+  color: hsl(227deg, 12%, 61%);
+}
+.container .comments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container .comments h1 {
+  color: hsl(228deg, 39%, 23%);
+}
+.container .comments .cards {
+  overflow-x: scroll;
+  position: relative;
+  gap: 20px;
+  display: flex;
+  width: 100%;
+}
+.container .comments .cards .card {
+  position: absolute;
+  min-width: 100%;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.container .comments .cards .card img {
+  width: 20%;
+  position: absolute;
+  top: -15%;
+}
+.container .comments .cards .card .content {
+  padding: 70px 20px;
+  width: 100%;
+  background-color: hsl(0deg, 0%, 93%);
+  line-height: 30px;
+  text-align: center;
+}
+.container .comments .cards .card .content .name {
+  color: hsl(228deg, 39%, 23%);
+  font-weight: 700;
+}
+.container .comments .cards .card .content .comment {
+  color: hsl(227deg, 12%, 61%);
+}
+.container .comments .start {
+  background-color: hsl(12deg, 88%, 59%);
+  border: none;
+  outline: none;
+  padding: 10px;
+  color: hsl(13deg, 100%, 96%);
+  font-weight: 700;
+  width: 200px;
+  border-radius: 100px;
+  box-shadow: 0 5px 10px 0.1px hsl(12deg, 88%, 59%);
+  display: block;
+  margin-top: 50px;
+}
+.container .callToAction {
+  background-color: hsl(12deg, 88%, 59%);
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px;
+  margin-top: 50px;
+  background-image: url(./images/bg-simplify-section-mobile.svg);
+  background-repeat: no-repeat;
+  box-shadow: 0 0 0 20px hsl(12deg, 88%, 59%);
+}
+.container .callToAction .start {
+  background-color: white;
+  border: none;
+  outline: none;
+  padding: 10px;
+  color: hsl(12deg, 88%, 59%);
+  font-weight: 700;
+  width: 150px;
+  border-radius: 100px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.container footer {
+  background-color: hsl(233deg, 12%, 13%);
+  color: white;
+  box-shadow: 0 0 0 80px hsl(233deg, 12%, 13%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+.container footer .inbox {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+  border: 1px soild white;
+}
+.container footer .inbox .search {
+  background-color: white;
+  padding: 10px 40px;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  width: 100%;
+  text-align: left;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+.container footer .inbox .go {
+  background-color: hsl(12deg, 88%, 59%);
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 100px;
+}
+.container footer ul {
+  display: flex;
+  gap: 100px;
+  color: hsl(0deg, 0%, 98%);
+  padding-block: 30px;
+}
+.container footer ul li {
+  padding-block: 10px;
+}
+.container footer .socialIcons {
+  display: flex;
+  gap: 50px;
+}
+.container footer .logo {
+  padding-block: 50px;
+}
+.container footer .copyRight {
+  color: hsl(227deg, 12%, 61%);
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    padding: 50px 150px;
+    background-position: 800px -110px;
+    background-size: 50%;
+    position: relative;
+  }
+  .container .hero nav {
+    position: static;
+  }
+  .container .hero nav ul {
+    position: static;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    box-shadow: none;
+    color: hsl(227deg, 12%, 61%);
+    background-size: 100%;
+  }
+  .container .hero nav .start {
+    background-color: hsl(12deg, 88%, 59%);
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: hsl(13deg, 100%, 96%);
+    font-weight: 700;
+    width: 200px;
+    border-radius: 100px;
+    box-shadow: 0 5px 10px 0.1px hsl(12deg, 88%, 59%);
+    display: block;
+  }
+  .container .hero nav .burger {
+    display: none;
+  }
+  .container .hero .data {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+  }
+  .container .hero .data .bottom {
+    text-align: left;
+    align-items: start;
+  }
+  .container .hero .data .bottom h1 {
+    font-size: 3rem;
+  }
+  .container .about {
+    flex-direction: row;
+    gap: 100px;
+    margin-top: 100px;
+  }
+  .container .about .aboutText {
+    text-align: left;
+    margin: 50px;
+  }
+  .container .about .aboutText h1 {
+    padding: 0;
+  }
+  .container .about .aboutText p {
+    padding: 0;
+  }
+  .container .about .features .feature {
+    text-align: left;
+  }
+  .container .about .features .feature h3 {
+    background-color: transparent;
+  }
+  .container .about .features .feature p {
+    padding-left: 100px;
+  }
+  .container .callToAction {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    box-shadow: 0 0 0 150px hsl(12deg, 88%, 59%);
+    margin-top: 800px;
+  }
+  .container .callToAction h1 {
+    padding: 0;
+    margin: 0;
+  }
+  .container .comments {
+    position: absolute;
+    left: 0;
+  }
+  .container .comments .cards .card {
+    min-width: 32%;
+  }
+  .container footer {
+    display: grid;
+    grid-template-areas: "logo links links inbox" "socialIcons links links copy-right";
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    box-shadow: 0 0 0 150px hsl(233deg, 12%, 13%);
+    margin-top: 300px;
+  }
+  .container footer .inbox {
+    grid-area: inbox;
+  }
+  .container footer ul {
+    grid-area: links;
+  }
+  .container footer .logo {
+    grid-area: logo;
+  }
+  .container footer .socialIcons {
+    grid-area: socialIcons;
+    gap: 20px;
+  }
+  .container footer .copyRight {
+    grid-area: copy-right;
+  }
+}/*# sourceMappingURL=style.css.map */
